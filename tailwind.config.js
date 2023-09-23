@@ -9,8 +9,45 @@ module.exports = {
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      },
+      textColor: {
+        'main_text_color': '#EDF5E1',
+      },
+      fontFamily: {
+        'roboto': ['Roboto', 'sans-serif'],
+        'martian': ['Martian Mono', 'monospace'],
+        'arvo': ['Arvo', 'serif'],
+      },
+      keyframes: {
+        fadeInGrow: {
+          '0%': {
+            opacity: '0',
+            transform: 'scale(0.95)'
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'scale(1)'
+          },
+        },
+        slideUnderline: {
+          '0%': {
+            width: '0%',
+          },
+          '100%': {
+            width: '100%',
+          },
+        },
+      },
+      animation: {
+        'fadeInGrow': 'fadeInGrow 1s ease-in-out',
+      },
+      width: {
+        '0': '0%',
+        'full': '100%',
+      },
+      transitionProperty: {
+        'width': 'width',
       },
     },
   },
