@@ -12,7 +12,9 @@ module.exports = {
         'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       textColor: {
-        'main_text_color': '#EDF5E1',
+        'main_text_color': '#8FD6E1',
+        'body_bg': '#8FD6E1',
+        'fullstack': '#D21312',
       },
       fontFamily: {
         'roboto': ['Roboto', 'sans-serif'],

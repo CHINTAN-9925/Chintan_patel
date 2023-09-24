@@ -5,6 +5,8 @@ import Projects from './components/Projects'
 import Contact from './components/Contact'
 import ContactForm from './components/Contact'
 import Experiance from './components/Experiance'
+import Footer from './components/Footer'
+
 
 export default function Home() {
   return (
@@ -14,6 +16,7 @@ export default function Home() {
       <Experiance/>
       <Projects />
       <ContactForm />
+      <Footer/>
     </>
   )
 }

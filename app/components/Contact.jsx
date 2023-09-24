@@ -1,12 +1,14 @@
 "use client";
 import React, { useState } from 'react';
 import { useInView } from 'react-intersection-observer';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const ContactForm = () => {
     const [formData, setFormData] = useState({
         name: '',
-        email: '',
+        sender: '',
         message: ''
     });
     const [ref, inView] = useInView({
@@ -21,17 +23,43 @@ const ContactForm = () => {
         }));
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log(formData);
-        setFormData({ name: '', email: '', message: '' });
+
+        try {
+            const response = await fetch('/api/email', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            });
+            console.log(formData)
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+
+            const responseData = await response.json();
+            console.log('Server Response:', responseData.status);
+            if (responseData.status === 'ok') {
+                toast.success(`${responseData.message}`);
+            } else {
+                toast.error('Failed to send email.');
+            }
+            setFormData({ name: '', sender: '', message: '' });
+        } catch (error) {
+            console.error('There was a problem with the fetch operation:', error.message);
+        }
     };
 
+
     return (
-        <div id='contact' className={`flex justify-center items-center ${inView ? 'animate-fadeInGrow' : ''}`} ref={ref}>
+        <div id='contact' className={`h-[80vh] font-martian flex justify-center items-center ${inView ? 'animate-fadeInGrow' : ''}`} ref={ref}>
+            <ToastContainer />
             <form onSubmit={handleSubmit} className="w-full max-w-md p-4"> {/* <-- changed from max-w-lg to max-w-md */}
+                <h1 className='text-main_text_color font-bold text-3xl mb-8 '>Contact</h1>
                 <div className="mb-4">
-                    <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
+                    <label className="block text-main_text_color text-sm font-bold mb-2" htmlFor="name">
                         Name
                     </label>
                     <input
@@ -46,22 +74,22 @@ const ContactForm = () => {
                 </div>
 
                 <div className="mb-4">
-                    <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
+                    <label className="block text-main_text_color text-sm font-bold mb-2" htmlFor="email">
                         Email
                     </label>
                     <input
                         type="email"
                         id="email"
-                        name="email"
+                        name="sender"
                         placeholder="Your email address"
-                        value={formData.email}
+                        value={formData.sender}
                         onChange={handleChange}
                         className="bg-gray-200 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                     />
                 </div>
 
                 <div className="mb-4">
-                    <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="message">
+                    <label className="block text-main_text_color text-sm font-bold mb-2" htmlFor="message">
                         Message
                     </label>
                     <textarea
@@ -78,10 +106,11 @@ const ContactForm = () => {
                 <div className="flex items-center justify-between">
                     <button
                         type="submit"
-                        className="bg-black hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline"
+                        className="bg-blue-700 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline"
                     >
                         Submit
                     </button>
+
                 </div>
             </form>
         </div>
