@@ -69,7 +69,7 @@ const ContactForm = () => {
                         placeholder="Your name"
                         value={formData.name}
                         onChange={handleChange}
-                        className="bg-gray-200 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        className="bg-gray-200 shadow appearance-none border rounded w-full text-black py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                     />
                 </div>
 
@@ -84,7 +84,7 @@ const ContactForm = () => {
                         placeholder="Your email address"
                         value={formData.sender}
                         onChange={handleChange}
-                        className="bg-gray-200 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        className="bg-gray-200 shadow appearance-none border rounded w-full py-2 px-3 text-black text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                     />
                 </div>
 
@@ -99,7 +99,7 @@ const ContactForm = () => {
                         placeholder="Your message"
                         value={formData.message}
                         onChange={handleChange}
-                        className="bg-gray-200 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        className="bg-gray-200 shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline"
                     ></textarea>
                 </div>
 

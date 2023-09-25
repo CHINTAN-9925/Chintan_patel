@@ -3,7 +3,7 @@ import Project from './ProjectCard'
 
 const Projects = () => {
     return (
-        <div className='flex flex-wrap md:flex-row font-martian mt-[100px] m-6'>
+        <div id='projects' className='flex flex-wrap md:flex-row font-martian mt-[100px] m-6'>
             <div className="w-full md:w-1/3 p-2 h-84 mt-5">
                 <Project
                     title="My Cool Project"

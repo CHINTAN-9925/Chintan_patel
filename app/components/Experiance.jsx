@@ -23,7 +23,7 @@ const Experience = () => {
     return (
         <div id='experience'
             ref={ref}
-            className={`font-martian max-w-4xl h-[80vh] mx-auto p-6 bg-font-martian text-main_text_color border-none rounded-lg shadow-md transition-transform transform duration-300 ${inView ? 'animate-fadeInGrow' : ''}`}>
+            className={`font-martian max-w-4xl mx-auto p-6 bg-font-martian text-main_text_color border-none rounded-lg shadow-md transition-transform transform duration-300 ${inView ? 'animate-fadeInGrow' : ''}`}>
             <h2 className='text-3xl font-bold mb-4'>Experience</h2>
             <h3 className='text-2xl mb-4'>Backend Intern at Flex Coder</h3>
             <p className='mb-2'>

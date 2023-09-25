@@ -40,9 +40,20 @@ module.exports = {
             width: '100%',
           },
         },
+        slideInFromTop: {
+          '0%': {
+            opacity: 0,
+            transform: 'translateY(-100%)',
+          },
+          '100%': {
+            opacity: 1,
+            transform: 'translateY(0)',
+          },
+        },
       },
       animation: {
         'fadeInGrow': 'fadeInGrow 1s ease-in-out',
+        'slideInFromTop': 'slideInFromTop 0.5s ease-in-out', // new animation added
       },
       width: {
         '0': '0%',
