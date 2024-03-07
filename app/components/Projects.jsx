@@ -5,7 +5,6 @@ const Projects = () => {
     return (
         <>
             <h2 className='text-3xl font-bold mb-4 mt-16 lg:mt-0  text-center text-fullstack'>Project</h2>
-            {/* <h2 className='text-3xl font-bold mb-4 lg:mt-0 text-main_text_color text-center'>About me</h2> */}
 
             <div id='projects' className='flex flex-wrap justify-center md:flex-row font-martian mt-[20px] m-6'>
                 <div className="w-full md:w-1/3 p-2 h-84 mt-5">
