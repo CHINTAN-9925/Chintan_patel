@@ -15,7 +15,7 @@ const Project = ({ title, description, image, link }) => {
       ref={ref} 
       className={`bg-gray-200 max-w-xs mx-auto my-2  overflow-hidden shadow-lg rounded-lg transition-transform transform  hover:scale-105 ${inView ? '' : 'scale-75'}`}
     >
-      <div className="relative h-40 w-full">
+      <div className=" h-40 w-full">
         <Image src={image} alt={title} layout="fill" objectFit="cover" />
       </div>
 

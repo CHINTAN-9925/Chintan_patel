@@ -4,8 +4,9 @@ import Main from './components/Main'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
 import ContactForm from './components/Contact'
-import Experiance from './components/Experiance'
+import Experiance from './components/About'
 import Footer from './components/Footer'
+import About from './components/About'
 
 
 export default function Home() {
@@ -13,10 +14,11 @@ export default function Home() {
     <>
       <Navbar />
       <Main />
-      <Experiance/>
+      {/* <About/> */}
+      <About/>
       <Projects />
       <ContactForm />
-      <Footer/>
+      {/* <Footer/> */}
     </>
   )
 }

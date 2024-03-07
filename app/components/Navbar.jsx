@@ -56,7 +56,7 @@ const Navbar = () => {
         <Image src="/assets/logo.png" alt="Logo" width={72} height={16} />
         <div className="hidden md:flex gap-10">
           <a href="#home" className='hover:underline relative before:content-[""] before:block before:absolute before:w-0/100 before:h-[2px] before:bg-black before:bottom-0 before:left-0 hover:before:w-100/100 transition-width duration-300'>Home</a>
-          <a href="#experience" className='hover:underline relative before:content-[""] before:block before:absolute before:w-0/100 before:h-[2px] before:bg-black before:bottom-0 before:left-0 hover:before:w-100/100 transition-width duration-300'>Experience</a>
+          <a href="#about" className='hover:underline relative before:content-[""] before:block before:absolute before:w-0/100 before:h-[2px] before:bg-black before:bottom-0 before:left-0 hover:before:w-100/100 transition-width duration-300'>About</a>
           <a href="#projects" className='hover:underline relative before:content-[""] before:block before:absolute before:w-0/100 before:h-[2px] before:bg-black before:bottom-0 before:left-0 hover:before:w-100/100 transition-width duration-300'>Projects</a>
           <a href="#contact" className='hover:underline relative before:content-[""] before:block before:absolute before:w-0/100 before:h-[2px] before:bg-black before:bottom-0 before:left-0 hover:before:w-100/100 transition-width duration-300'>Contact</a>
         </div>
@@ -74,7 +74,7 @@ const Navbar = () => {
           </button>
           <ul className="flex flex-col font-martian space-y-4 p-4">
             <li><a href="#home">Home</a></li>
-            <li><a href="#experience">Experience</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
