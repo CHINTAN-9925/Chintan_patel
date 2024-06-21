@@ -39,30 +39,31 @@ const Navbar = () => {
         <div className="hidden md:flex gap-10">
           <a
             href="#home"
-            className='hover:underline relative before:content-[""] before:block before:absolute before:w-0/100 before:h-[2px] before:bg-black before:bottom-0 before:left-0 hover:before:w-100/100 transition-width duration-300 '
+            className='hover:text-white text-main_text_color relative before:content-[""] before:block before:absolute before:w-0/100 before:h-[2px] before:bg-black before:bottom-0 before:left-0 hover:before:w-100/100 transition-width duration-300 '
           >
             Home
           </a>
           <a
             href="#about"
-            className='hover:underline relative before:content-[""] before:block before:absolute before:w-0/100 before:h-[2px] before:bg-black before:bottom-0 before:left-0 hover:before:w-100/100 transition-width duration-300 '
+            className='hover:text-white text-main_text_color relative before:content-[""] before:block before:absolute before:w-0/100 before:h-[2px] before:bg-black before:bottom-0 before:left-0 hover:before:w-100/100 transition-width duration-300 '
           >
             About
           </a>
           <a
             href="#projects"
-            className='hover:underline relative before:content-[""] before:block before:absolute before:w-0/100 before:h-[2px] before:bg-black before:bottom-0 before:left-0 hover:before:w-100/100 transition-width duration-300 '
+            className='hover:text-white text-main_text_color relative before:content-[""] before:block before:absolute before:w-0/100 before:h-[2px] before:bg-black before:bottom-0 before:left-0 hover:before:w-100/100 transition-width duration-300 '
           >
             Projects
           </a>
           <a
             href="#contact"
-            className='hover:underline relative before:content-[""] before:block before:absolute before:w-0/100 before:h-[2px] before:bg-black before:bottom-0 before:left-0 hover:before:w-100/100 transition-width duration-300 '
+            className='hover:text-white text-main_text_color relative before:content-[""] before:block before:absolute before:w-0/100 before:h-[2px] before:bg-black before:bottom-0 before:left-0 hover:before:w-100/100 transition-width duration-300 '
           >
             Connect
           </a>
           <a
-            href="/demo_pdf.pdf"
+            className="hover:text-white text-main_text_color"
+            href="demo_pdf.pdf"
             target="_blank"
             download
           >
@@ -109,11 +110,7 @@ const Navbar = () => {
               <a href="#contact">Connect</a>
             </li>
             <li>
-              <a
-                href="/demo_pdf.pdf"
-                target="_blank"
-                download
-              >
+              <a href="demo_pdf.pdf" download>
                 Resume
               </a>
             </li>
