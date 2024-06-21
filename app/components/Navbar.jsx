@@ -117,6 +117,15 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
+
+      {/* Sticky Download Resume Button for Small Devices */}
+      <a
+        href="Resume.pdf"
+        download
+        className="fixed top-4 right-4 bg-blue-500 text-white p-2 rounded-lg shadow-md md:hidden"
+      >
+        Download Resume
+      </a>
     </div>
   );
 };
