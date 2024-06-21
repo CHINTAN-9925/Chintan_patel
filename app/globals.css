@@ -19,8 +19,8 @@ html {
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 0, 0, 0;
-    --background-start-rgb: 21, 21, 21; /* This corresponds to #1a202c */
-    --background-end-rgb: 21, 21, 21; /* This corresponds to #1a202c */
+    --background-start-rgb: 21, 21, 21; 
+    --background-end-rgb: 21, 21, 21; 
   }
 }
 

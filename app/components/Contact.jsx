@@ -9,8 +9,8 @@ const ContactForm = () => {
    
     return (
 
-        <div id='contact' className="h-[50vh] font-martian ">
-            <h1 className=' font-bold text-3xl mb-8 text-center mt-16 text-fullstack'>Let's Connect</h1>
+        <div id='contact' className="h-[50vh] font-martian lg:h[100vh]">
+            <h1 className=' font-bold text-5xl mb-8 text-center mt-16 text-fullstack'>Let's Connect</h1>
             <div className="container mx-auto flex justify-center items-center flex-col space-y-4">
                 <div className="flex space-x-4">
                     <a
