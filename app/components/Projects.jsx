@@ -1,25 +1,26 @@
 import React from "react";
 import Project from "./ProjectCard";
-import demo from "../assets/demo.jpg";
+import blog from '../assets/blog.jpeg'
+import chat from '../assets/chat.jpeg'
+import social from '../assets/socialmedia.jpeg'
 
-// Define constant array for project data
 const projectData = [
   {
     title: "Trend Blog",
     description: "A MERN stack web application enabling users to create, share, and manage engaging posts on trending topics, secured with JWT authentication.",
-    image: demo,
+    image: blog,
     link: "https://github.com/CHINTAN-9925/Blog-MERN"
   },
   {
     title: "Chat App",
     description: "A real-time messaging application built with the MERN stack, WebSocket, and Tailwind CSS, allowing users to chat and create groups securely.",
-    image: demo,
+    image: blog,
     link: "https://github.com/CHINTAN-9925/chat_app"
   },
   {
     title: "Social media App (UI)",
     description: "A visually appealing social media interface designed for seamless user interaction and engagement,where user can post their pictures.",
-    image: demo,
+    image: social,
     link: "https://github.com/CHINTAN-9925/instagram_clone"
   }
 ];
