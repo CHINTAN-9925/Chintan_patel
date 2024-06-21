@@ -63,7 +63,7 @@ const Navbar = () => {
           </a>
           <a
             className="hover:text-white text-main_text_color"
-            href="demo_pdf.pdf"
+            href="Resume.pdf"
             target="_blank"
             download
           >
@@ -110,7 +110,7 @@ const Navbar = () => {
               <a href="#contact">Connect</a>
             </li>
             <li>
-              <a href="demo_pdf.pdf" download>
+              <a href="Resume.pdf" download>
                 Resume
               </a>
             </li>
