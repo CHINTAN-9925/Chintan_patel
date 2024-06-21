@@ -3,14 +3,10 @@ import React, { useState } from 'react';
 import 'react-toastify/dist/ReactToastify.css';
 import { FaGithub, FaLinkedin, FaHeart } from 'react-icons/fa';
 
-
-
 const ContactForm = () => {
-   
     return (
-
         <div id='contact' className="h-[50vh] font-martian lg:h[100vh]">
-            <h1 className=' font-bold text-5xl mb-8 text-center mt-16 text-fullstack'>Let's Connect</h1>
+            <h1 className=' font-bold text-5xl mb-8 text-center mt-16 text-fullstack'>Let&apos;s Connect</h1>
             <div className="container mx-auto flex justify-center items-center flex-col space-y-4">
                 <div className="flex space-x-4">
                     <a
