@@ -14,7 +14,7 @@ const projectData = [
   {
     title: "Chat App",
     description: "A real-time messaging application built with the MERN stack, WebSocket, and Tailwind CSS, allowing users to chat and create groups securely.",
-    image: blog,
+    image: chat,
     link: "https://github.com/CHINTAN-9925/chat_app"
   },
   {
