@@ -34,30 +34,29 @@ const Navbar = () => {
         id="home"
         className="flex justify-between items-center font-bold m-10 text-lg font-martian animate-fadeInGrow"
       >
-        {/* <Image src={image} alt="Logo" width={72} height={16} /> */}
         <div></div>
         <div className="hidden md:flex gap-10">
           <a
             href="#home"
-            className='hover:text-white text-main_text_color relative before:content-[""] before:block before:absolute before:w-0/100 before:h-[2px] before:bg-black before:bottom-0 before:left-0 hover:before:w-100/100 transition-width duration-300 '
+            className='hover:text-white text-main_text_color relative before:content-[""] before:block before:absolute before:w-0/100 before:h-[2px] before:bg-white before:bottom-0 before:left-0 hover:before:w-100/100 transition-width duration-300 '
           >
             Home
           </a>
           <a
             href="#about"
-            className='hover:text-white text-main_text_color relative before:content-[""] before:block before:absolute before:w-0/100 before:h-[2px] before:bg-black before:bottom-0 before:left-0 hover:before:w-100/100 transition-width duration-300 '
+            className='hover:text-white text-main_text_color relative before:content-[""] before:block before:absolute before:w-0/100 before:h-[2px] before:bg-white before:bottom-0 before:left-0 hover:before:w-100/100 transition-width duration-300 '
           >
             About
           </a>
           <a
             href="#projects"
-            className='hover:text-white text-main_text_color relative before:content-[""] before:block before:absolute before:w-0/100 before:h-[2px] before:bg-black before:bottom-0 before:left-0 hover:before:w-100/100 transition-width duration-300 '
+            className='hover:text-white text-main_text_color relative before:content-[""] before:block before:absolute before:w-0/100 before:h-[2px] before:bg-white before:bottom-0 before:left-0 hover:before:w-100/100 transition-width duration-300 '
           >
             Projects
           </a>
           <a
             href="#contact"
-            className='hover:text-white text-main_text_color relative before:content-[""] before:block before:absolute before:w-0/100 before:h-[2px] before:bg-black before:bottom-0 before:left-0 hover:before:w-100/100 transition-width duration-300 '
+            className='hover:text-white text-main_text_color relative before:content-[""] before:block before:absolute before:w-0/100 before:h-[2px] before:bg-white before:bottom-0 before:left-0 hover:before:w-100/100 transition-width duration-300 '
           >
             Connect
           </a>
